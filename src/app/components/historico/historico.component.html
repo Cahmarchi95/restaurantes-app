@@ -1,0 +1,14 @@
+<div *ngIf="historico.length > 0">
+  <h5>Histórico de Edição:</h5>
+  <ul>
+    <li *ngFor="let item of historico">
+      Restaurante: {{ item.nome }} - Editado em: {{ item.dataEdicao | date }}
+    </li>
+  </ul>
+  <button class="btn btn-danger" (click)="limparHistorico()">
+    Limpar Histórico
+  </button>
+</div>
+<div *ngIf="historico.length === 0">
+  <p>Sem histórico de edição.</p>
+</div>

@@ -1,0 +1,46 @@
+<h5>Cadastro Restaurantes</h5>
+
+<div class="row g-3">
+  <div class="col-sm">
+    <label for="validationDefault01" class="form-label mb-1">Nome:</label>
+
+    <input
+      type="text"
+      class="form-control"
+      id="validationDefault01"
+      placeholder="Nome"
+      aria-label="nome"
+      [(ngModel)]="nome"
+      required
+    />
+  </div>
+  <div class="col-sm">
+    <label for="validationDefault02" class="form-label mb-1">Tipo:</label>
+    <input
+      type="text"
+      class="form-control"
+      id="validationDefault02"
+      placeholder="Tipo"
+      aria-label="tipo"
+      [(ngModel)]="tipo"
+      required
+    />
+  </div>
+  <div class="col-sm">
+    <label for="validationDefault03" class="form-label mb-1">Quantidade:</label>
+    <input
+      type="number"
+      class="form-control"
+      id="validationDefault03"
+      placeholder="Quantidade"
+      aria-label="quantidade"
+      [(ngModel)]="quantidade"
+      required
+    />
+  </div>
+  <div class="d-flex flex-row-reverse">
+    <button class="btn btn-success" (click)="adicionarRestaurante()">
+      Adicionar
+    </button>
+  </div>
+</div>
